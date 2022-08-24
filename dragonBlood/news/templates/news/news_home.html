@@ -1,0 +1,38 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}Новости{% endblock %}
+
+{% block content  %}
+    <div class="features">
+        <h1>
+             Новости
+        </h1>
+        {% if news %}
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>
+                        {{el.title}}
+                    </h3>
+                    <p> {{el.anons}}</p>
+                </div>
+            {% endfor %}
+        {% else %}
+
+            <p>
+                Новости отсутствуют!
+            </p>
+        {% endif %}
+
+        {# комментарий  #}
+        <button class="btn btn-danger" onclick="window.location.href = 'http://127.0.0.1:8000/';">
+            На главную
+        </button>
+
+
+
+    </div>
+
+
+
+{% endblock %}
