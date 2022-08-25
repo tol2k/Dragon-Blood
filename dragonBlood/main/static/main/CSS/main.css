@@ -84,8 +84,9 @@ aside ul a {
     float: left;
     clear: both;
     width: 400px;
-    margin: 20px 34%;
-    text-align: center;
+    margin: 20px 33%;
+
+    text-align: left;
     background-color: #858585;
     color: #FFFFFF;
 
@@ -96,4 +97,26 @@ form {
     margin-left: 29%;
     width: 500px;
     margin-top: 50px;
+}
+
+.features button {
+    -webkit-writing-mode: horizontal-tb !important;
+    -webkit-appearance: button;
+    border-color: #000000 ;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px 35px 10px;
+    text-rendering: auto;
+    color: initial;
+    display: inline-block;
+    text-align: center;
+    margin: 0em;
+
+
+}
+
+.features a{
+    margin-left: 29%;
+
+
 }
